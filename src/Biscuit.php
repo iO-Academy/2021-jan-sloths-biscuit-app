@@ -6,9 +6,9 @@ require_once 'vendor/autoload.php';
 
 class Biscuit
 {
-    public $name;
-    protected $img;
-    protected $RDT;
-    protected $desc;
-    protected $wikipedia;
+    public string $name;
+    public string $img;
+    public int $RDT;
+    public string $desc;
+    public string $wikipedia;
 }
