@@ -26,12 +26,12 @@
 DROP TABLE IF EXISTS `biscuits`;
 
 CREATE TABLE `biscuits` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(19) NOT NULL,
   `img` varchar(181) NOT NULL,
   `RDT` int(11) NOT NULL,
   `description` varchar(355) NOT NULL,
   `wikipedia` varchar(68) NOT NULL,
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
