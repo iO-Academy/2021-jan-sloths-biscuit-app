@@ -2,6 +2,7 @@
 
 namespace BiscuitApp;
 
+
 ?>
 
 <!DOCTYPE html>
@@ -25,44 +26,8 @@ namespace BiscuitApp;
             <div class="item-img"><img src="https://placekitten.com/200/250" alt=""></div>
             <div class="item-data"><h3>RDT: 5</h3></div>
         </div>
-        <div class="card">
-            <div class="item-header"><h2>Digestive</h2></div>
-            <div class="item-img"><img src="https://placekitten.com/200/250" alt=""></div>
-            <div class="item-data"><h3>RDT: 5</h3></div>
-        </div>
-        <div class="card">
-            <div class="item-header"><h2>Digestive</h2></div>
-            <div class="item-img"><img src="https://placekitten.com/200/250" alt=""></div>
-            <div class="item-data"><h3>RDT: 5</h3></div>
-        </div>
-        <div class="card">
-            <div class="item-header"><h2>Digestive</h2></div>
-            <div class="item-img"><img src="https://placekitten.com/200/250"></div>
-            <div class="item-data"><h3>RDT: 5</h3></div>
-        </div>
-        <div class="card">
-            <div class="item-header"><h2>Digestive</h2></div>
-            <div class="item-img"><img src="https://placekitten.com/200/250"></div>
-            <div class="item-data"><h3>RDT: 5</h3></div>
-        </div>
-        <div class="card">
-            <div class="item-header"><h2>Digestive</h2></div>
-            <div class="item-img"><img src="https://placekitten.com/200/250"></div>
-            <div class="item-data"><h3>RDT: 5</h3></div>
-        </div>
-        <div class="card">
-            <div class="item-header"><h2>Digestive</h2></div>
-            <div class="item-img"><img src="https://placekitten.com/200/250"></div>
-            <div class="item-data"><h3>RDT: 5</h3></div>
-        </div>
-        <div class="card">
-            <div class="item-header"><h2>Digestive</h2></div>
-            <div class="item-img"><img src="https://placekitten.com/200/250"></div>
-            <div class="item-data"><h3>RDT: 5</h3></div>
-        </div>
     </div>
 </main>
 
 </body>
 </html>
-
