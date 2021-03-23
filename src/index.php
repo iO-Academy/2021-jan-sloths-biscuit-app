@@ -1,6 +1,16 @@
 <?php
 
 namespace BiscuitApp;
+require_once 'vendor/autoload.php';
+use PDO;
+// connecting to biscuit database
+$db = new PDO('mysql:host=db; dbname=biscuits', 'root', 'password');
+$hydrateBiscuitObject = new BiscuitHydrator();
+
+// saving allBiscuitsObject from a variable into the database
+$allBiscuitsObject=$hydrateBiscuitObject->getBiscuitObjects($db);
+$dynamicBiscuitString = BiscuitDisplayer::printBiscuits($allBiscuitsObject);
+
 ?>
 
 <!DOCTYPE html>
@@ -19,11 +29,7 @@ namespace BiscuitApp;
         <h1>That's the Way the Cookie Crumbles</h1>
     </div>
     <div  class="outer-container">
-        <div class="card">
-            <div class="item-header"><h2>Digestive</h2></div>
-            <div class="item-img"><img src="https://placekitten.com/200/250" alt=""></div>
-            <div class="item-data"><h3>RDT: 5</h3></div>
-        </div>
+        <?php echo $dynamicBiscuitString ?>
     </div>
 </main>
 
