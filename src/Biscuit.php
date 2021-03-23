@@ -8,7 +8,7 @@ class Biscuit
 {
     public string $name;
     public string $img;
-    public int $RDT;
+    public string $RDT;
     public string $desc;
     public string $wikipedia;
 }
