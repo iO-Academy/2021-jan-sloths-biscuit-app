@@ -1,7 +1,9 @@
 <?php
 
 namespace BiscuitApp\Test;
-class BiscuitDisplayerTest
+use PHPUnit\Framework\TestCase;
+
+class BiscuitDisplayerTest extends TestCase
 {
 
 }

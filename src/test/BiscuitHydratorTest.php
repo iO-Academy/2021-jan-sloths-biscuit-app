@@ -1,7 +1,9 @@
 <?php
 
 namespace BiscuitApp\Test;
-class BiscuitHydratorTest
+use PHPUnit\Framework\TestCase;
+
+class BiscuitHydratorTest extends TestCase
 {
 
 }
