@@ -32,7 +32,6 @@ CREATE TABLE `biscuits` (
   `RDT` int(11) NOT NULL,
   `description` varchar(355) NOT NULL,
   `wikipedia` varchar(68) NOT NULL,
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
