@@ -1,8 +1,10 @@
 <?php
 
 namespace BiscuitApp\Test;
-use PHPUnit\Framework\TestCase;
+
 require_once '../vendor/autoload.php';
+
+use PHPUnit\Framework\TestCase;
 
 class BiscuitHydratorTest extends TestCase
 {
