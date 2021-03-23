@@ -21,13 +21,13 @@ namespace BiscuitApp;
     </div>
     <div  class="outer-container">
         <div class="card">
-            <div class="item-header"></div>
-            <div class="item-img"></div>
-            <div class="item-data"></div>
+            <div class="item-header">blahblahblah</div>
+            <div class="item-img"><img src="https://placekitten.com/200/250"></div>
+            <div class="item-data">blahblahblahb lahblahb lahblahb lahblahbla hblahblah</div>
         </div>
     </div>
 </main>
 
 </body>
-</html>
+</html>>
 
