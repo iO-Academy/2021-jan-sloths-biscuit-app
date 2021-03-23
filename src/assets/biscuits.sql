@@ -26,6 +26,7 @@
 DROP TABLE IF EXISTS `biscuits`;
 
 CREATE TABLE `biscuits` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(19) NOT NULL,
   `img` varchar(181) NOT NULL,
   `RDT` int(11) NOT NULL,
