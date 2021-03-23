@@ -22,7 +22,7 @@ class Biscuit
         return $this->img;
     }
 
-    public function getRDT(): int
+    public function getRDT(): string
     {
         return $this->RDT;
     }
