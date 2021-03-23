@@ -12,3 +12,6 @@ $hydrateBiscuitObject = new BiscuitHydrator();
 
 // saving allBiscuitsObject from a variable into the database
 $allBiscuitsObject=$hydrateBiscuitObject->getBiscuitObjects($db);
+
+echo BiscuitDisplayer::printBiscuits($allBiscuitsObject);
+
