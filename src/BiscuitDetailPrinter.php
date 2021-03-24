@@ -19,7 +19,10 @@ class BiscuitDetailPrinter
         $ID = $singleBiscuitObject->getID();
 
         $biscuitString =
-            '<div class="card"><div class="item-header"><h2>' . $name . '</h2></div><div class="item-img"><img src="' . $image . '" alt="' . $name . ' biscuit' . '"></div><div class="item-data"><h3>Description:</h3><p>' . $description . '</p><h3>RDT: ' . $RDT . '</h3></div><a href="' . $wikipedia . '">More Biscuit Info</a></div>';
+            '<div class="card"><div class="title-container"><div class="item-header">
+<h2>' . $name . '</h2></div></div>
+<div class="column-container"><div class="item-img"><img src="' . $image . '" alt="' . $name . ' biscuit' . '"></div></div>
+<div class="item-description-container"><div class="item-description"><p>' . $description . '</p></div><div class="item-data"><h3>RDT: ' . $RDT . '</h3></div><div class="wiki-btn"><a href="' . $wikipedia . '"><p>Wikipedia page</p></a><div class="back-btn"><a href="index.php"><img src="assets/images/bourbon-btn.png"></a></div></div></div>';
         return $biscuitString;
     }
 }
