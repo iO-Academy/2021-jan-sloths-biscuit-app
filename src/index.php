@@ -8,7 +8,7 @@ $db = new PDO('mysql:host=db; dbname=biscuits', 'root', 'password');
 $hydrateBiscuitObject = new BiscuitHydrator();
 
 // saving allBiscuitsObject from a variable into the database
-$allBiscuitsObject=$hydrateBiscuitObject->getBiscuitObjects($db);
+$allBiscuitsObject = $hydrateBiscuitObject->getBiscuitObjects($db);
 $dynamicBiscuitString = BiscuitDisplayer::printBiscuits($allBiscuitsObject);
 
 ?>
