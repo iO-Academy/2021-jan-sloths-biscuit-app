@@ -11,6 +11,7 @@ class Biscuit
     protected $RDT;
     protected $description;
     protected $wikipedia;
+    protected $ID;
 
     //getter methods
     public function getName(): string
@@ -26,5 +27,29 @@ class Biscuit
     public function getRDT(): string
     {
         return $this->RDT;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWikipedia()
+    {
+        return $this->wikipedia;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getID()
+    {
+        return $this->ID;
     }
 }
