@@ -26,6 +26,7 @@ h1 {
 h2, h3 {
     font-size: 2.2rem;
     text-align: center;
+    padding: 0px;
 }
 
 img {
@@ -59,12 +60,21 @@ img {
     background-color: #9DD9D2;
 }
 
-.item-data, .item-header, .item-img {
+.item-header, .item-img {
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.item-data {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
 }
 
 .item-img {
