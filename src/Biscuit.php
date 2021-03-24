@@ -6,11 +6,11 @@ require_once 'vendor/autoload.php';
 
 class Biscuit
 {
-    protected string $name;
-    protected string $img;
-    protected string $RDT;
-    protected string $description;
-    protected string $wikipedia;
+    protected $name;
+    protected $img;
+    protected $RDT;
+    protected $description;
+    protected $wikipedia;
 
     //getter methods
     public function getName(): string
