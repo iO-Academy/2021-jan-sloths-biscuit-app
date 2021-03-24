@@ -26,7 +26,7 @@ class BiscuitDisplayerTest extends TestCase
         $input = [$biscuitMock, $biscuitMockTwo];
 
 
-        $expectedOutput = '<div class="card"><div class="item-header"><h2>Bourbon</h2></div><div class="item-img"><img src="assets/images/bourbons-unedited.jpg" alt="Bourbon biscuit"></div><div class="item-data"><h3>Recommended dunking time:</h3><p class="number-display">7 Seconds</p></div></div>'.'<div class="card"><div class="item-header"><h2>Danny</h2></div><div class="item-img"><img src="assets/images/bourbons-unedited.jpg" alt="Danny biscuit"></div><div class="item-data"><h3>Recommended dunking time:</h3><p class="number-display">111 Seconds</p></div></div>';
+        $expectedOutput = '<div class="card"><div class="item-header"><h2>Bourbon</h2></div><div class="item-img"><img src="assets/images/bourbons-unedited.jpg" alt="Bourbon biscuit"></div><div class="item-data"><h3>Recommended dunking time:</h3><p class="number-display">7 seconds</p></div></div>'.'<div class="card"><div class="item-header"><h2>Danny</h2></div><div class="item-img"><img src="assets/images/bourbons-unedited.jpg" alt="Danny biscuit"></div><div class="item-data"><h3>Recommended dunking time:</h3><p class="number-display">111 seconds</p></div></div>';
         $actualOutput = BiscuitDisplayer::printBiscuits($input);
         $this->assertEquals($expectedOutput, $actualOutput);
     }

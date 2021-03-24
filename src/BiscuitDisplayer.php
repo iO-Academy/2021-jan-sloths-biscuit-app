@@ -15,7 +15,7 @@ class BiscuitDisplayer
             $RDT = $biscuitObject->getRDT();
 
             $biscuitsString .=
-                '<div class="card"><div class="item-header"><h2>' . $name . '</h2></div><div class="item-img"><img src="' . $image . '" alt="' . $name . ' biscuit' . '"></div><div class="item-data"><h3>Recommended dunking time:</h3><p class="number-display">' . $RDT . ' Seconds</p></div></div>';
+                '<div class="card"><div class="item-header"><h2>' . $name . '</h2></div><div class="item-img"><img src="' . $image . '" alt="' . $name . ' biscuit' . '"></div><div class="item-data"><h3>Recommended dunking time:</h3><p class="number-display">' . $RDT . ' seconds</p></div></div>';
         }
         return $biscuitsString;
     }
