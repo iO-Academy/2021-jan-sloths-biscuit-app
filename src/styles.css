@@ -11,7 +11,9 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
+    color: #322A4E;
     background-color: #FFF8F0;
+    /*background: url("assets/images/gingernut.jpg");*/
 }
 
 h1 {
@@ -45,10 +47,42 @@ img {
     justify-content: center;
 }
 
+.column-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.wiki-btn {
+    display: block;
+    height: 50px;
+    width: auto;
+    background-color: #FF8811;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.wiki-btn-text {
+    padding: 15px;
+    color: #322A4E;
+    font-size: 2.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item-description-container {
+    padding-right: 25px;
+}
+
+.back-btn {
+    margin: 150px auto;
+}
+
 .card {
     margin: 25px;
     background-color: #F4D06F;
-    width: 300px;
+    width: 640px;
     height: 500px;
     border-radius: 20px;
     display: flex;
@@ -71,8 +105,28 @@ img {
     height: 300px;
 }
 
+.bg-image {
+    /*background-image: url("assets/images/gingernut.jpg");*/
+    width: 100%;
+    height: auto;
+    opacity: 0.25;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: repeat;
+    z-index: -1;
+}
+
 @media screen and (max-width: 700px) {
     .header-container {
         margin: 50px;
     }
+}
+
+.icon-animation {
+    transition: all .3s ease-in-out;
+}
+
+.icon-animation:hover {
+    transform: scale(1.2);
 }
