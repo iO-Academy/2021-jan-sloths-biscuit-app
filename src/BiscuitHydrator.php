@@ -6,7 +6,6 @@ require_once 'vendor/autoload.php';
 
 use PDO;
 
-
 class BiscuitHydrator
 {
     public static function getBiscuitObjects(PDO $db): array
