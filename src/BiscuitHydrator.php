@@ -8,11 +8,11 @@ use PDO;
 
 class BiscuitHydrator
 {
-    public static function getBiscuitObjects(PDO $db): array
+    public static function bakeBiscuit(PDO $db, $id)
     {
-        $query = $db->prepare('SELECT * FROM `biscuits`');
+        $query = $db->prepare('SELECT * FROM `biscuits` WHERE `id` = ?');
         $query->setFetchMode(PDO::FETCH_CLASS, Biscuit::class);
-        $query->execute();
-        return $query->fetchAll();
+        $query->execute([$id]);
+        return $query->fetch();
     }
 }

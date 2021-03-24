@@ -8,7 +8,7 @@ use PDO;
 
 // connecting to biscuit database
 $db = new PDO('mysql:host=db; dbname=biscuits', 'root', 'password');
-$hydrateBiscuitObject = new BiscuitHydrator();
+$hydrateBiscuitObject = new BiscuitsHydrator();
 
 // saving allBiscuitsObject from a variable into the database
 $allBiscuitsObject = $hydrateBiscuitObject->getBiscuitObjects($db);

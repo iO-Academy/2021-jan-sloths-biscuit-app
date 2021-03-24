@@ -10,13 +10,9 @@ $id = $_GET['id'];
 
 // connecting to biscuit database
 $db = new PDO('mysql:host=db; dbname=biscuits', 'root', 'password');
-$query = $db->prepare('SELECT * FROM `biscuits` WHERE `id` = ?');
-$query->setFetchMode(PDO::FETCH_CLASS, Biscuit::class);
-$query->execute([$id]);
-$singleBiscuitObject = $query->fetch()
 
 
-
+$singleBiscuitObject = BiscuitHydrator::bakeBiscuit($db, $id)
 
 ?>
 
