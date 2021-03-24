@@ -12,7 +12,7 @@ class Biscuit
     protected $description;
     protected $wikipedia;
 
-    //getter methods
+
     public function getName(): string
     {
         return $this->name;
