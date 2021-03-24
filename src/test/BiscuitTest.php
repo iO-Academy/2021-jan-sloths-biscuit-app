@@ -1,7 +1,12 @@
 <?php
 
 namespace BiscuitApp\Test;
-class BiscuitTest
+
+require_once '../vendor/autoload.php';
+
+use PHPUnit\Framework\TestCase;
+
+class BiscuitTest extends TestCase
 {
 
 }
