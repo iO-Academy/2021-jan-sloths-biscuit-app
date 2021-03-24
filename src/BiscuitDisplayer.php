@@ -7,18 +7,18 @@ require_once 'vendor/autoload.php';
 class BiscuitDisplayer
 {
 
-    static public function printBiscuits(array $allBiscuitsObject): string {
-        $biscuitString = '';
-        forEach($allBiscuitsObject as $biscuitCard) {
+    static public function printBiscuits( $allBiscuitObjects) {
+        $biscuitsString = '';
+        forEach($allBiscuitObjects as $biscuitObject) {
 
-            $biscuitString .=
+            $biscuitsString .=
                 '<div class="card"><div class="item-header"><h2>' .
-            $biscuitCard->name .
-            '</h2></div><div class="item-img"><img src="' . $biscuitCard->img . '" alt="' . $biscuitCard->name . ' biscuit' .
+            $biscuitObject->name .
+            '</h2></div><div class="item-img"><img src="' . $biscuitObject->img . '" alt="' . $biscuitObject->name . ' biscuit' .
                 '"></div>
-                <div class="item-data"><h3>RDT: ' . $biscuitCard->RDT .
+                <div class="item-data"><h3>RDT: ' . $biscuitObject->RDT .
             '</h3></div></div>';
         }
-        return $biscuitString;
+        return $biscuitsString;
     }
 }
