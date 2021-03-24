@@ -28,10 +28,7 @@ $singleBiscuitObject = BiscuitHydrator::bakeBiscuit($db, $id)
 <body>
 
 <main>
-    <div class="header-container">
-        <h1>That's the Way the Cookie Crumbles</h1>
-    </div>
-    <div  class="outer-container">
+
         <?php echo BiscuitDetailPrinter::printBiscuit($singleBiscuitObject) ?>
     </div>
 </main>

@@ -21,7 +21,8 @@ class BiscuitDetailPrinterTest extends TestCase
         $input = $biscuitMock;
 
 
-        $expectedOutput = '<div class="card"><div class="title-container"><div class="item-header">
+        $expectedOutput = '<img class="bg-image" src="assets/images/bourbons-unedited.jpg"><div class="header-container"><h1>That\'s the Way the Cookie Crumbles</h1></div><div  class="outer-container">
+           <div class="card"><div class="title-container"><div class="item-header">
 <h2>Bourbon</h2></div></div>
 <div class="column-container"><div class="item-img"><img src="assets/images/bourbons-unedited.jpg" alt="Bourbon biscuit"></div></div>
 <div class="item-description-container"><div class="item-description"><p>The Bourbon biscuit is a sandwich style biscuit consisting of two thin rectangular dark chocolate-flavoured biscuits with a chocolate buttercream filling.</p></div><div class="item-data"><h3>RDT: 7</h3></div><div class="wiki-btn"><a href="https://en.wikipedia.org/wiki/Bourbon_biscuit"><p>Wikipedia page</p></a><div class="back-btn"><a href="index.php"><img src="assets/images/bourbon-btn.png"></a></div></div></div>';
