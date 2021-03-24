@@ -9,9 +9,10 @@ class Biscuit
     protected string $name;
     protected string $img;
     protected string $RDT;
-    protected string $desc;
+    protected string $description;
     protected string $wikipedia;
 
+    //getter methods
     public function getName(): string
     {
         return $this->name;
