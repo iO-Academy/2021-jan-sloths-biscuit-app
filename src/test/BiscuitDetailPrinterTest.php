@@ -18,7 +18,7 @@ class BiscuitDetailPrinterTest extends TestCase
         $biscuitMock->expects($this->once())->method('getRDT')->willReturn('7');
         $biscuitMock->expects($this->once())->method('getDescription')->willReturn('The Bourbon biscuit is a sandwich style biscuit consisting of two thin rectangular dark chocolate-flavoured biscuits with a chocolate buttercream filling.');
         $biscuitMock->expects($this->once())->method('getWikipedia')->willReturn('https://en.wikipedia.org/wiki/Bourbon_biscuit');
-        $input = [$biscuitMock];
+        $input = $biscuitMock;
 
 
         $expectedOutput = '<div class="card"><div class="title-container"><div class="item-header">
