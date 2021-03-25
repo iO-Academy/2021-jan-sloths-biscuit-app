@@ -69,6 +69,7 @@ img {
 
 a {
     text-decoration: none;
+    color: #322A4E;
 }
 
 .item-description-container {
@@ -80,6 +81,16 @@ a {
 }
 
 .card {
+    margin: 25px;
+    background-color: #F4D06F;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-single {
     margin: 25px;
     background-color: #F4D06F;
     width: 640px;

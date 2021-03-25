@@ -18,8 +18,28 @@ class BiscuitDetailPrinter
         $wikipedia = $singleBiscuitObject->getWikipedia();
         $ID = $singleBiscuitObject->getID();
 
-        $biscuitString =
-            '<div class="card"><div class="item-header"><h2>' . $name . '</h2></div><div class="item-img"><img src="' . $image . '" alt="' . $name . ' biscuit' . '"></div><div class="item-data"><h3>Description:</h3><p>' . $description . '</p><h3>RDT: ' . $RDT . '</h3></div><a href="' . $wikipedia . '">More Biscuit Info</a></div>';
+//        $biscuitString =
+//            '<div class="card"><div class="title-container"><div class="item-header"><h2>' . $name . '</h2></div><div class="column-container"></div><div class="item-img"><img src="' . $image . '" alt="' . $name . ' biscuit' . '"></div><div class="item-description-container"><div class="item-description"></h3><p>' . $description . '</p></div><div class="item-data"><h3>RDT: ' . $RDT . '</h3></div><div class="wiki-btn"><a href="' . $wikipedia . '">Wikipedia Page</a></div></div>';
+//
+        $biscuitString = '<img class="bg-image" src="' . $image . '">
+<div class="card-single">
+            
+            <div class="title-container">
+                <div class="item-header"><h2>' . $name . '</h2></div>
+            </div>
+            <div class="column-container">
+                <div class="item-img"><img src="' . $image . '" alt=""></div>
+                <div class="item-description-container">
+                    <div class="item-description"><p>' . $description . '</p></div>
+                    <div class="item-data"><h3>RDT: ' . $RDT . '</h3></div>
+                    <div class="wiki-btn"><a href="' . $wikipedia . '"><p class="wiki-btn-text icon-animation">Wikipedia page</p></a></div>
+                </div>
+            </div>
+            <div class="back-btn icon-animation">
+                <a href="index.php"><img src="assets/images/bourbon-btn.png"></a>
+            </div>
+        </div>';
+
         return $biscuitString;
     }
 }
