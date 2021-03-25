@@ -8,10 +8,9 @@ use PDO;
 
 // connecting to biscuit database
 $db = new PDO('mysql:host=db; dbname=biscuits', 'root', 'password');
-$hydrateBiscuitObject = new BiscuitsHydrator();
 
 // saving allBiscuitsObject from a variable into the database
-$allBiscuitsObject = $hydrateBiscuitObject->getBiscuitObjects($db);
+$allBiscuitsObject = BiscuitsHydrator::getBiscuitObjects($db);
 $dynamicBiscuitString = BiscuitDisplayer::printBiscuits($allBiscuitsObject);
 
 ?>
@@ -23,7 +22,8 @@ $dynamicBiscuitString = BiscuitDisplayer::printBiscuits($allBiscuitsObject);
     <title>Biscuit Database</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:wght@400;500&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 
@@ -31,7 +31,7 @@ $dynamicBiscuitString = BiscuitDisplayer::printBiscuits($allBiscuitsObject);
     <div class="header-container">
         <h1>That's the Way the Cookie Crumbles</h1>
     </div>
-    <div  class="outer-container">
+    <div class="outer-container">
         <?php echo $dynamicBiscuitString ?>
     </div>
 </main>
