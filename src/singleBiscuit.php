@@ -10,13 +10,9 @@ $id = $_GET['id'];
 
 // connecting to biscuit database
 $db = new PDO('mysql:host=db; dbname=biscuits', 'root', 'password');
-$query = $db->prepare('SELECT * FROM `biscuits` WHERE `id` = ?');
-$query->setFetchMode(PDO::FETCH_CLASS, Biscuit::class);
-$query->execute([$id]);
-$singleBiscuitObject = $query->fetch()
 
 
-
+$singleBiscuitObject = BiscuitHydrator::bakeBiscuit($db, $id)
 
 ?>
 
@@ -37,6 +33,7 @@ $singleBiscuitObject = $query->fetch()
         <h1>That's the Way the Cookie Crumbles</h1>
     </div>
     <div  class="outer-container">
+
         <?php echo BiscuitDetailPrinter::printBiscuit($singleBiscuitObject) ?>
 
     </div>
