@@ -2,8 +2,6 @@
 
 namespace BiscuitApp;
 
-require_once 'vendor/autoload.php';
-
 use PDO;
 
 class BiscuitHydrator

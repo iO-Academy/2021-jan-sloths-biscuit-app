@@ -2,8 +2,6 @@
 
 namespace BiscuitApp;
 
-require_once 'vendor/autoload.php';
-
 class BiscuitDisplayer
 {
     static public function printBiscuits(array $allBiscuitObjects): string
