@@ -2,8 +2,6 @@
 
 namespace BiscuitApp;
 
-require_once 'vendor/autoload.php';
-
 class Biscuit
 {
     protected $name;

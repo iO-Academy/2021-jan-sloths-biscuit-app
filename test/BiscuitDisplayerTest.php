@@ -1,7 +1,5 @@
 <?php
 
-namespace BiscuitApp\Test;
-
 require_once '../vendor/autoload.php';
 
 use BiscuitApp\Biscuit;

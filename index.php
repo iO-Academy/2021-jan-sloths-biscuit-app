@@ -1,10 +1,8 @@
 <?php
-
-namespace BiscuitApp;
-
 require_once 'vendor/autoload.php';
 
-use PDO;
+use BiscuitApp\BiscuitDisplayer;
+use BiscuitApp\BiscuitHydrator;
 
 // connecting to biscuit database
 $db = new PDO('mysql:host=db; dbname=biscuits', 'root', 'password');
@@ -20,7 +18,7 @@ $dynamicBiscuitString = BiscuitDisplayer::printBiscuits($allBiscuitsObject);
 <head>
     <meta charset="UTF-8">
     <title>Biscuit Database</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:wght@400;500&display=swap"
           rel="stylesheet">
